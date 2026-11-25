@@ -1,0 +1,1 @@
+[{"S": 64, "lowrank_r16": 5.1, "full_softmax": 4.3}, {"S": 256, "lowrank_r16": 17.5, "full_softmax": 24.7}, {"S": 1024, "lowrank_r16": 73.0, "full_softmax": 288.5}, {"S": 2048, "lowrank_r16": 164.2, "full_softmax": 1251.2}, {"S": 4096, "lowrank_r16": 538.2, "full_softmax": 5517.7}]

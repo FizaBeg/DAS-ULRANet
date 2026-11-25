@@ -1,0 +1,8 @@
+data_cache.pkl
+otway_windows.npz
+results_otway/
+*.part
+*.progress.json
+.ipynb_checkpoints/
+__pycache__/
+*.pyc

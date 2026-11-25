@@ -1,0 +1,77 @@
+{
+ "device": "cuda",
+ "latency": {
+  "DAS-ULRANet (MDLRA r=16)": {
+   "params": 45364,
+   "ms_batch1": 15.665450016967952,
+   "ms_per_window_batch64": 1.005460937449243
+  },
+  "DAS-ULRANet (MDLRA r=4)": {
+   "params": 45364,
+   "ms_batch1": 34.51065003173426,
+   "ms_per_window_batch64": 0.4110953132112627
+  },
+  "DAS-ULRANet (MDLRA r=64)": {
+   "params": 45364,
+   "ms_batch1": 37.75879996828735,
+   "ms_per_window_batch64": 0.8012132811927586
+  },
+  "Dual-axis full softmax attention": {
+   "params": 45364,
+   "ms_batch1": 25.13820002786815,
+   "ms_per_window_batch64": 0.7632453125552274
+  },
+  "No attention": {
+   "params": 30516,
+   "ms_batch1": 11.87124999705702,
+   "ms_per_window_batch64": 0.47137578076217324
+  },
+  "CNN-AE": {
+   "params": 230336,
+   "ms_batch1": 6.434999988414347,
+   "ms_per_window_batch64": 0.07476562495867256
+  },
+  "BiLSTM-AE": {
+   "params": 205408,
+   "ms_batch1": 10.083500004839152,
+   "ms_per_window_batch64": 0.168600000506558
+  }
+ },
+ "scaling": [
+  {
+   "S": 64,
+   "lowrank_r16": 5.19,
+   "lowrank_r16_peakMB": 28,
+   "full_softmax": 7.53,
+   "full_softmax_peakMB": 28
+  },
+  {
+   "S": 256,
+   "lowrank_r16": 31.09,
+   "lowrank_r16_peakMB": 34,
+   "full_softmax": 6.39,
+   "full_softmax_peakMB": 43
+  },
+  {
+   "S": 1024,
+   "lowrank_r16": 15.25,
+   "lowrank_r16_peakMB": 61,
+   "full_softmax": 6.26,
+   "full_softmax_peakMB": 289
+  },
+  {
+   "S": 2048,
+   "lowrank_r16": 20.46,
+   "lowrank_r16_peakMB": 97,
+   "full_softmax": 22.29,
+   "full_softmax_peakMB": 1065
+  },
+  {
+   "S": 4096,
+   "lowrank_r16": 29.71,
+   "lowrank_r16_peakMB": 169,
+   "full_softmax": 60.66,
+   "full_softmax_peakMB": 4153
+  }
+ ]
+}
